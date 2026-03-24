@@ -1,1 +1,64 @@
+body {
+    background-color: #191B1D; /* Official Roblox Dark Background */
+    color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.auth-box {
+    background-color: #2B2D2F; /* Panel background */
+    padding: 30px;
+    border-radius: 8px;
+    width: 400px;
+    text-align: center;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    background-color: #393B3D;
+    border: 1px solid #454749;
+    border-radius: 4px;
+    color: white;
+    box-sizing: border-box;
+}
+
+.btn-signup {
+    background-color: #00B06F; /* Roblox Green */
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn-login {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    width: 100%;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.error-text { color: #f4645d; font-size: 13px; margin: 5px 0; }
+
+.navbar {
+    background: #232527;
+    height: 40px;
+    position: fixed;
+    top: 0; width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    border-bottom: 1px solid #393B3D;
+}
 

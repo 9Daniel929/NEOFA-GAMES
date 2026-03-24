@@ -1,1 +1,56 @@
-<title>Neofa Games</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Roblox | Signup & Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div id="navbar" class="navbar" style="display: none;">
+        <div class="nav-left"><span class="logo">ROBLOX</span></div>
+        <div class="nav-right">
+            <span id="display-name">User</span>
+            <div class="avatar-stub"></div>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="auth-box" id="auth-box">
+        <div id="signup-section">
+            <h1>Sign Up and Start Having Fun!</h1>
+            <div class="input-group">
+                <label>Birthday</label>
+                <div class="birthday-row">
+                    <select id="b-month"><option>Month</option><option>January</option></select>
+                    <select id="b-day"><option>Day</option><option>01</option></select>
+                    <select id="b-year"><option>Year</option><option>2024</option></select>
+                </div>
+            </div>
+            <input type="text" id="reg-user" placeholder="Username (3-20 characters)">
+            <input type="password" id="reg-pass" placeholder="Password (min 8 chars)">
+            <input type="password" id="reg-confirm" placeholder="Confirm Password">
+            
+            <div class="gender-row">
+                <button class="gender-btn">Girl</button>
+                <button class="gender-btn">Boy</button>
+            </div>
+
+            <p class="error-text" id="signup-error"></p>
+            <button class="btn-signup" onclick="validateSignup()">Sign Up</button>
+            <p class="footer-link">Already have an account? <a href="#" onclick="toggleAuth()">Log In</a></p>
+        </div>
+
+        <div id="login-section" style="display: none;">
+            <h1>Login to Roblox</h1>
+            <input type="text" id="log-user" placeholder="Username/Email/Phone">
+            <input type="password" id="log-pass" placeholder="Password">
+            <button class="btn-login" onclick="validateLogin()">Log In</button>
+            <p class="footer-link">Don't have an account? <a href="#" onclick="toggleAuth()">Sign Up</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
